@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		02CABD312C58981E00D49D6E /* FintechTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CABD302C58981E00D49D6E /* FintechTestApp.swift */; };
-		02CABD332C58981E00D49D6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CABD322C58981E00D49D6E /* ContentView.swift */; };
+		02CABD332C58981E00D49D6E /* ViewIntroduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CABD322C58981E00D49D6E /* ViewIntroduction.swift */; };
 		02CABD352C58982200D49D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02CABD342C58982200D49D6E /* Assets.xcassets */; };
 		02CABD382C58982200D49D6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02CABD372C58982200D49D6E /* Preview Assets.xcassets */; };
 		02CABD422C58982200D49D6E /* FintechTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CABD412C58982200D49D6E /* FintechTestTests.swift */; };
 		02CABD4C2C58982200D49D6E /* FintechTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CABD4B2C58982200D49D6E /* FintechTestUITests.swift */; };
 		02CABD4E2C58982200D49D6E /* FintechTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CABD4D2C58982200D49D6E /* FintechTestUITestsLaunchTests.swift */; };
+		02CABD5C2C58A22A00D49D6E /* model_Introduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CABD5B2C58A22A00D49D6E /* model_Introduction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		02CABD2D2C58981E00D49D6E /* FintechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FintechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02CABD302C58981E00D49D6E /* FintechTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FintechTestApp.swift; sourceTree = "<group>"; };
-		02CABD322C58981E00D49D6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		02CABD322C58981E00D49D6E /* ViewIntroduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewIntroduction.swift; sourceTree = "<group>"; };
 		02CABD342C58982200D49D6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02CABD372C58982200D49D6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		02CABD3D2C58982200D49D6E /* FintechTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FintechTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		02CABD472C58982200D49D6E /* FintechTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FintechTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02CABD4B2C58982200D49D6E /* FintechTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FintechTestUITests.swift; sourceTree = "<group>"; };
 		02CABD4D2C58982200D49D6E /* FintechTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FintechTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02CABD5B2C58A22A00D49D6E /* model_Introduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model_Introduction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		02CABD242C58981E00D49D6E = {
 			isa = PBXGroup;
 			children = (
+				02CABD5A2C58A1FD00D49D6E /* modelIntroduction */,
 				02CABD2F2C58981E00D49D6E /* FintechTest */,
 				02CABD402C58982200D49D6E /* FintechTestTests */,
 				02CABD4A2C58982200D49D6E /* FintechTestUITests */,
@@ -95,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				02CABD302C58981E00D49D6E /* FintechTestApp.swift */,
-				02CABD322C58981E00D49D6E /* ContentView.swift */,
+				02CABD322C58981E00D49D6E /* ViewIntroduction.swift */,
 				02CABD342C58982200D49D6E /* Assets.xcassets */,
 				02CABD362C58982200D49D6E /* Preview Content */,
 			);
@@ -125,6 +128,14 @@
 				02CABD4D2C58982200D49D6E /* FintechTestUITestsLaunchTests.swift */,
 			);
 			path = FintechTestUITests;
+			sourceTree = "<group>";
+		};
+		02CABD5A2C58A1FD00D49D6E /* modelIntroduction */ = {
+			isa = PBXGroup;
+			children = (
+				02CABD5B2C58A22A00D49D6E /* model_Introduction.swift */,
+			);
+			path = modelIntroduction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02CABD332C58981E00D49D6E /* ContentView.swift in Sources */,
+				02CABD332C58981E00D49D6E /* ViewIntroduction.swift in Sources */,
+				02CABD5C2C58A22A00D49D6E /* model_Introduction.swift in Sources */,
 				02CABD312C58981E00D49D6E /* FintechTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
