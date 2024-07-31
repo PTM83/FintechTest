@@ -9,24 +9,12 @@ import SwiftUI
 
 struct ViewIntroduction: View {
     
-    let primaryColor = formatRGBColor(colorRed: 213, colorGreen: 160, colorBlue: 33)
-    let letterColor = formatRGBColor(colorRed: 75, colorGreen: 66, colorBlue: 55)
-    
-    let numbers: Array<Int> = Array(1...9)
-    
-    
     var body: some View {
         
-        let columns = [
-            GridItem(.flexible(), spacing:50),
-            GridItem(.flexible(), spacing:50),
-            GridItem(.flexible(), spacing:50)
-        ]
-        
         ZStack(alignment: .center) {
-            Rectangle()
-            primaryColor.toSwiftColor()
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            ContainerRelativeShape()
+            CustomColors.primaryColor.toSwiftColor()
+                .edgesIgnoringSafeArea(.all)
             
             VStack {
                 Text("Insert your PIN")
@@ -39,31 +27,25 @@ struct ViewIntroduction: View {
                     }
                 }
                 
-                Spacer()
+                Spacer(minLength: 220)
                 
-                LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(numbers, id: \.self) { number in
-                        Button(action: {
-                            // Acción cuando se presiona el botón
-                            print("Número presionado: \(number)")
-                        }) {
-                            Text("\(number)")
-                                .font(.system(size:65,
-                                              weight: .light,
-                                              design: .rounded)
-                                )
-                                .foregroundColor(letterColor.toSwiftColor())
-                        }
-                    }
-                }
-                .padding(.horizontal, 80)
+                DigitPasswordView(items: CustomElements.elements, letterColor: CustomColors.letterColor.toSwiftColor())
                 
                 Spacer()
                 
-                Text("Forgot my PIN")
+                Button(action: {
+                    print("")
+                },
+                       label: {
+                    Text("Forget my PIN")
+                        .font(.system(size: 20,
+                                      weight: .medium,
+                                      design: .rounded)
+                        )
+                })
             }
             .padding()
-        }
+        }.foregroundColor(CustomColors.letterColor.toSwiftColor())
     }
 }
 
@@ -71,4 +53,5 @@ struct ViewIntroduction: View {
 #Preview {
     ViewIntroduction()
 }
+
 

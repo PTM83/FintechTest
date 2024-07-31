@@ -33,3 +33,18 @@ struct formatRGBColor {
         Color(red: colorRGBRed, green: colorRGBGreen, blue: colorRGBBlue)
     }
 }
+
+struct Constant {
+    var spacingLVGrid: CGFloat
+    var sizeLetter: CGFloat
+    var widthFrame: CGFloat
+    var heightFrame: CGFloat
+    
+    init(spacingLVGrid: CGFloat = 20, sizeLetter:CGFloat = 60, widthFrame:CGFloat = 50, heightFrame:CGFloat = 50) {
+        
+        self.spacingLVGrid = spacingLVGrid
+        self.sizeLetter = sizeLetter
+        self.widthFrame = widthFrame
+        self.heightFrame = heightFrame
+    }
+}
