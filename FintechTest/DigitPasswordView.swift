@@ -53,7 +53,9 @@ struct DigitPasswordView: View {
                     }
                 } else if let image = items[element] as? Image {
                     Button(action: {
-                        
+                        if enteredDigit.count != 0 {
+                            enteredDigit.removeLast()
+                        }
                     }) {
                         image
                             .resizable()
@@ -69,5 +71,7 @@ struct DigitPasswordView: View {
 
 
 #Preview {
-    DigitPasswordView(items: Array(1...9), letterColor: .blue, enteredDigit: .constant([]))
+    DigitPasswordView(items: Array(1...9) + [Image(systemName: "delete.left"), 0],
+                      letterColor: .blue,
+                      enteredDigit: .constant([]))
 }
