@@ -82,7 +82,6 @@
 		02CABD242C58981E00D49D6E = {
 			isa = PBXGroup;
 			children = (
-				02CABD5A2C58A1FD00D49D6E /* modelIntroduction */,
 				02CABD2F2C58981E00D49D6E /* FintechTest */,
 				02CABD402C58982200D49D6E /* FintechTestTests */,
 				02CABD4A2C58982200D49D6E /* FintechTestUITests */,
@@ -103,13 +102,12 @@
 		02CABD2F2C58981E00D49D6E /* FintechTest */ = {
 			isa = PBXGroup;
 			children = (
-				02CABD302C58981E00D49D6E /* FintechTestApp.swift */,
-				02CABD322C58981E00D49D6E /* ViewIntroduction.swift */,
-				02CABD632C5B3EC300D49D6E /* checkPasswordView.swift */,
-				02CABD342C58982200D49D6E /* Assets.xcassets */,
+				02FAD9C32C5C3194007EE8EF /* App */,
+				02FAD9C22C5C30FA007EE8EF /* Assets */,
+				02FAD9BE2C5C2F66007EE8EF /* Components */,
+				02CABD5A2C58A1FD00D49D6E /* Models */,
 				02CABD362C58982200D49D6E /* Preview Content */,
-				02CABD5D2C59EC7700D49D6E /* DigitPasswordView.swift */,
-				02CABD5F2C59EDC000D49D6E /* DataConstantApp.swift */,
+				02FAD9BF2C5C3058007EE8EF /* Views */,
 			);
 			path = FintechTest;
 			sourceTree = "<group>";
@@ -117,6 +115,7 @@
 		02CABD362C58982200D49D6E /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				02CABD5F2C59EDC000D49D6E /* DataConstantApp.swift */,
 				02CABD372C58982200D49D6E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -139,12 +138,61 @@
 			path = FintechTestUITests;
 			sourceTree = "<group>";
 		};
-		02CABD5A2C58A1FD00D49D6E /* modelIntroduction */ = {
+		02CABD5A2C58A1FD00D49D6E /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				02CABD5B2C58A22A00D49D6E /* model_Introduction.swift */,
 			);
-			path = modelIntroduction;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		02FAD9BE2C5C2F66007EE8EF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				02FAD9C12C5C30D6007EE8EF /* CheckPasswordView */,
+				02FAD9C02C5C30C4007EE8EF /* DigitPasswordView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		02FAD9BF2C5C3058007EE8EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02CABD322C58981E00D49D6E /* ViewIntroduction.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02FAD9C02C5C30C4007EE8EF /* DigitPasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				02CABD5D2C59EC7700D49D6E /* DigitPasswordView.swift */,
+			);
+			path = DigitPasswordView;
+			sourceTree = "<group>";
+		};
+		02FAD9C12C5C30D6007EE8EF /* CheckPasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				02CABD632C5B3EC300D49D6E /* checkPasswordView.swift */,
+			);
+			path = CheckPasswordView;
+			sourceTree = "<group>";
+		};
+		02FAD9C22C5C30FA007EE8EF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				02CABD342C58982200D49D6E /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		02FAD9C32C5C3194007EE8EF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				02CABD302C58981E00D49D6E /* FintechTestApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
