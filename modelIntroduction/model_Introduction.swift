@@ -34,6 +34,7 @@ struct formatRGBColor {
     }
 }
 
+/// Estructura para mantener constantes utilizadas en la vista `DigitPasswordView`.
 struct Constant {
     var spacingLVGrid: CGFloat
     var sizeLetter: CGFloat
@@ -47,4 +48,15 @@ struct Constant {
         self.widthFrame = widthFrame
         self.heightFrame = heightFrame
     }
+}
+
+/// Estructura que representa las credenciales del usuario.
+struct UserCredentials {
+    /// El número de celular del usuario
+    var cellNumber: String
+    
+    ///La contraseña
+    var password: [Int]
+    
+    /// Inicializador para la estructura UserCredentials
 }

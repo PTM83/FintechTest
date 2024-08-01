@@ -17,6 +17,7 @@
 		02CABD5C2C58A22A00D49D6E /* model_Introduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CABD5B2C58A22A00D49D6E /* model_Introduction.swift */; };
 		02CABD5E2C59EC7700D49D6E /* DigitPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CABD5D2C59EC7700D49D6E /* DigitPasswordView.swift */; };
 		02CABD602C59EDC000D49D6E /* DataConstantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CABD5F2C59EDC000D49D6E /* DataConstantApp.swift */; };
+		02CABD642C5B3EC300D49D6E /* checkPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CABD632C5B3EC300D49D6E /* checkPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		02CABD5B2C58A22A00D49D6E /* model_Introduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model_Introduction.swift; sourceTree = "<group>"; };
 		02CABD5D2C59EC7700D49D6E /* DigitPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitPasswordView.swift; sourceTree = "<group>"; };
 		02CABD5F2C59EDC000D49D6E /* DataConstantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConstantApp.swift; sourceTree = "<group>"; };
+		02CABD632C5B3EC300D49D6E /* checkPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				02CABD302C58981E00D49D6E /* FintechTestApp.swift */,
 				02CABD322C58981E00D49D6E /* ViewIntroduction.swift */,
+				02CABD632C5B3EC300D49D6E /* checkPasswordView.swift */,
 				02CABD342C58982200D49D6E /* Assets.xcassets */,
 				02CABD362C58982200D49D6E /* Preview Content */,
 				02CABD5D2C59EC7700D49D6E /* DigitPasswordView.swift */,
@@ -278,6 +281,7 @@
 				02CABD332C58981E00D49D6E /* ViewIntroduction.swift in Sources */,
 				02CABD5E2C59EC7700D49D6E /* DigitPasswordView.swift in Sources */,
 				02CABD5C2C58A22A00D49D6E /* model_Introduction.swift in Sources */,
+				02CABD642C5B3EC300D49D6E /* checkPasswordView.swift in Sources */,
 				02CABD312C58981E00D49D6E /* FintechTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

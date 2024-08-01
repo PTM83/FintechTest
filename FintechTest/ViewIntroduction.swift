@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ViewIntroduction: View {
+    @State private var enteredDigit:Array<Int> = []
     
     var body: some View {
         
@@ -17,19 +18,11 @@ struct ViewIntroduction: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
-                Text("Insert your PIN")
-                    .font(.system(size: 25, weight: .medium, design: .rounded))
-                    .padding(.bottom, 32)
-                
-                HStack {
-                    ForEach(0..<4) { _ in
-                        Image(systemName: "circle")
-                    }
-                }
-                
+                CheckPasswordView(enteredDigits: $enteredDigit,topText: "Insert your PIN")
+
                 Spacer(minLength: 220)
                 
-                DigitPasswordView(items: CustomElements.elements, letterColor: CustomColors.letterColor.toSwiftColor())
+                DigitPasswordView(items: CustomElements.elements, letterColor: CustomColors.letterColor.toSwiftColor(), enteredDigit: $enteredDigit)
                 
                 Spacer()
                 
@@ -53,5 +46,4 @@ struct ViewIntroduction: View {
 #Preview {
     ViewIntroduction()
 }
-
 

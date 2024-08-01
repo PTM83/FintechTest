@@ -7,12 +7,25 @@
 
 import SwiftUI
 
-struct checkPasswordView: View {
+struct CheckPasswordView: View {
+    
+    @Binding var enteredDigits: Array<Int>
+    var topText: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(topText)
+            .font(.system(size: 25, weight: .medium, design: .rounded))
+            .padding(.bottom, 32)
+        
+        HStack {
+            ForEach(0..<4, id: \.self) { index in
+                index < enteredDigits.count ? Image(systemName: "circle.fill") : Image(systemName: "circle")
+                
+            }
+        }
     }
 }
 
 #Preview {
-    checkPasswordView()
+    CheckPasswordView(enteredDigits: .constant([1,2]), topText: "Test")
 }
