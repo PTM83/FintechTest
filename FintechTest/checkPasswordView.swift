@@ -13,15 +13,20 @@ struct CheckPasswordView: View {
     var topText: String
     
     var body: some View {
-        Text(topText)
-            .font(.system(size: 25, weight: .medium, design: .rounded))
-            .padding(.bottom, 32)
+        print("CheckPasswordView body is being rendered")
         
-        HStack {
-            ForEach(0..<4, id: \.self) { index in
-                index < enteredDigits.count ? Image(systemName: "circle.fill") : Image(systemName: "circle")
-                
+        return VStack {
+            Text(topText)
+                .font(.system(size: 25, weight: .medium, design: .rounded))
+                .padding(.bottom, 32)
+            
+            HStack {
+                ForEach(0..<4, id: \.self) { index in
+                    index < enteredDigits.count ? Image(systemName: "circle.fill") : Image(systemName: "circle")
+                    
+                }
             }
+            
         }
     }
 }

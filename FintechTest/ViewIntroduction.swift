@@ -11,13 +11,14 @@ struct ViewIntroduction: View {
     @State private var enteredDigit:Array<Int> = []
     
     var body: some View {
-        
-        ZStack(alignment: .center) {
+        print("ViewIntroduction body is being rendered")
+        return ZStack(alignment: .center) {
             ContainerRelativeShape()
             CustomColors.primaryColor.toSwiftColor()
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
+                
                 CheckPasswordView(enteredDigits: $enteredDigit,topText: "Insert your PIN")
 
                 Spacer(minLength: 220)
@@ -27,7 +28,7 @@ struct ViewIntroduction: View {
                 Spacer()
                 
                 Button(action: {
-                    print("")
+                    print("DEBE HACER ALGO")
                 },
                        label: {
                     Text("Forget my PIN")

@@ -33,42 +33,46 @@ struct DigitPasswordView: View {
     let maxDigit: Int = 4
     
     var body: some View {
-        LazyVGrid(columns: columns, spacing: constant.spacingLVGrid) {
+        print("DigitPasswordView body is being rendered")
+        
+        return LazyVGrid(columns: columns, spacing: constant.spacingLVGrid) {
             ForEach(0..<items.count, id: \.self) { element in
-                
-                if let number = items[element] as? Int {
-                    Button(action: {
-                        // Acción cuando se presiona el botón
-                        
-                        if enteredDigit.count < maxDigit {
-                            enteredDigit.append(number)
-                        }
-                        print("Número presionado: \(number), \(enteredDigit)")
-                    }) {
-                        Text("\(number)")
-                            .font(.system(size: constant.sizeLetter,
-                                          weight: .light,
-                                          design: .rounded)
-                            )
-                    }
-                } else if let image = items[element] as? Image {
-                    Button(action: {
-                        if enteredDigit.count != 0 {
-                            enteredDigit.removeLast()
-                        }
-                    }) {
-                        image
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: constant.widthFrame, height: constant.heightFrame)
-                    }
-                }
+                generateButton(for: items[element])
             }.foregroundColor(letterColor)
         }
         .padding(.horizontal, 50)
     }
+    
+    // Se separa la vista de Botones para tener un código mas legible
+    @ViewBuilder
+    private func generateButton(for item: Any) -> some View {
+        if let number = item as? Int {
+            Button(action: {
+                if enteredDigit.count < maxDigit {
+                    enteredDigit.append(number)
+                }
+                print("Número presionado: \(number), \(enteredDigit)")
+            }) {
+                Text("\(number)")
+                    .font(.system(size: constant.sizeLetter,
+                                  weight: .light,
+                                  design: .rounded)
+                    )
+            }
+        } else if let image = item as? Image {
+            Button(action: {
+                if !enteredDigit.isEmpty {
+                    enteredDigit.removeLast()
+                }
+            }) {
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: constant.widthFrame, height: constant.heightFrame)
+            }
+        }
+    }
 }
-
 
 #Preview {
     DigitPasswordView(items: Array(1...9) + [Image(systemName: "delete.left"), 0],
