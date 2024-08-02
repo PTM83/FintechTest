@@ -12,8 +12,9 @@ struct CheckPasswordView: View {
     @Binding var enteredDigits: Array<Int>
     var topText: String
     
-    // Inicializar la class ()
+    // Inicializar la class()
     private let userDataBase = UserDataBase()
+    @State var showError: Bool = false
     
     var body: some View {
         
@@ -34,6 +35,13 @@ struct CheckPasswordView: View {
                     verifyPassword()
                 }
             }
+            if showError {
+                Text("Credenciales Inválidas")
+                    .foregroundColor(.white)
+                    .frame(width: 200, height: 30, alignment: .center)
+                    .background(Color.red)
+                    .cornerRadius(20)
+            }
         }
     }
     
@@ -43,6 +51,7 @@ struct CheckPasswordView: View {
             // Aquí puedes manejar lo que sucede si la autenticación es exitosa, como navegar a otra vista
         } else {
             print("Authentication failed")
+            showError = true
             enteredDigits.removeAll()
         }
     }
