@@ -52,11 +52,12 @@ struct Constant {
 
 /// Estructura que representa las credenciales del usuario.
 struct UserCredentials {
+    /// mail
+    var mail: String
+    
     /// El número de celular del usuario
     var cellNumber: String
     
     ///La contraseña
     var password: [Int]
-    
-    /// Inicializador para la estructura UserCredentials
 }
