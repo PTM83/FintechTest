@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02955BB22C5D7746008309BC /* DigitEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02955BB12C5D7746008309BC /* DigitEntryView.swift */; };
 		02CABD312C58981E00D49D6E /* FintechTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CABD302C58981E00D49D6E /* FintechTestApp.swift */; };
 		02CABD332C58981E00D49D6E /* ViewIntroduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CABD322C58981E00D49D6E /* ViewIntroduction.swift */; };
 		02CABD352C58982200D49D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02CABD342C58982200D49D6E /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02955BB12C5D7746008309BC /* DigitEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitEntryView.swift; sourceTree = "<group>"; };
 		02CABD2D2C58981E00D49D6E /* FintechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FintechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02CABD302C58981E00D49D6E /* FintechTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FintechTestApp.swift; sourceTree = "<group>"; };
 		02CABD322C58981E00D49D6E /* ViewIntroduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewIntroduction.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				02CABD632C5B3EC300D49D6E /* checkPasswordView.swift */,
+				02955BB12C5D7746008309BC /* DigitEntryView.swift */,
 			);
 			path = CheckPasswordView;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				02CABD5E2C59EC7700D49D6E /* DigitPasswordView.swift in Sources */,
 				02CABD5C2C58A22A00D49D6E /* model_Introduction.swift in Sources */,
 				02CABD642C5B3EC300D49D6E /* checkPasswordView.swift in Sources */,
+				02955BB22C5D7746008309BC /* DigitEntryView.swift in Sources */,
 				02F655342C5C89A200BEA3A2 /* UserDataBase.swift in Sources */,
 				02CABD312C58981E00D49D6E /* FintechTestApp.swift in Sources */,
 			);

@@ -21,7 +21,7 @@ struct ViewIntroduction: View {
                 
                 CheckPasswordView(enteredDigits: $enteredDigit,topText: "Insert your PIN")
 
-                Spacer(minLength: 220)
+                Spacer(minLength: 110)
                 
                 DigitPasswordView(items: CustomElements.elements, letterColor: CustomColors.letterColor.toSwiftColor(), enteredDigit: $enteredDigit)
                 
