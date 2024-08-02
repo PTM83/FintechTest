@@ -9,11 +9,12 @@ import SwiftUI
 
 struct DigitEntryView: View {
     @Binding var enteredDigits: [Int]
-    @State private var showError: Bool = false
+    @State private var showError: Bool = false // Evaluar este State para la vista Principal.
     private let userDataBase = UserDataBase()
     
     var body: some View {
-        VStack {
+        print("DigitEntryView body is being rendered")
+        return VStack {
             HStack {
                 ForEach(0..<4, id: \.self) { index in
                     index < enteredDigits.count ? Image(systemName: "circle.fill") : Image(systemName: "circle")

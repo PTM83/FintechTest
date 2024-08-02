@@ -70,6 +70,8 @@ struct DigitPasswordView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: constant.widthFrame, height: constant.heightFrame)
             }
+            .disabled(enteredDigit.isEmpty) // DEsactiva el botón si no hay elementos
+            .opacity(enteredDigit.isEmpty ? 0.5 : 1.0) // Permite agregar una opacidad si el botón esta deshabilitado y sino se coloca su color completo
         }
     }
 }
