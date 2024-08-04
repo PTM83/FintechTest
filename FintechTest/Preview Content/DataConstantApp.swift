@@ -19,7 +19,8 @@ import SwiftUI
 // Estructura para encapsular los colores
 struct CustomColors {
     static let primaryColor = formatRGBColor(colorRed: 213, colorGreen: 160, colorBlue: 33)
-    static let letterColor = formatRGBColor(colorRed: 75, colorGreen: 66, colorBlue: 55)
+    static let digitColor = formatRGBColor(colorRed: 75, colorGreen: 66, colorBlue: 55)
+    static let letterColor = formatRGBColor(colorRed: 237, colorGreen: 231, colorBlue: 217)
 }
 
 // Estructura para encapsular los elementos
@@ -29,6 +30,7 @@ struct CustomElements {
 
 // Estructura para condición de ingreso
 class AttemptManager: ObservableObject {
+    @Published var isAthenticated: Bool = false
     @Published var attempCount: Int = 0
     let maxAttemps: Int = 4
     var diffAttemps: Int {

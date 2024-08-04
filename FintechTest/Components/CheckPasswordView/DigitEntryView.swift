@@ -68,6 +68,7 @@ struct DigitEntryView: View {
         if userDataBase.VerifyCredentials(password: enteredDigits) {
             print("Authentication successful")
             // Aquí puedes manejar lo que sucede si la autenticación es exitosa, como navegar a otra vista
+            attemptManager.isAthenticated = true // Cambiar el estado para navegar a MachMainView
         } else {
             print("Authentication failed")
             showError = true
