@@ -60,6 +60,7 @@ struct DigitPasswordView: View {
                                   design: .rounded)
                     )
             }.disabled(attemptManager.attempCount >= attemptManager.maxAttemps)
+                .opacity(attemptManager.attempCount >= attemptManager.maxAttemps ? 0.5 : 1.0)
         } else if let image = item as? Image {
             Button(action: {
                 if !enteredDigit.isEmpty {
