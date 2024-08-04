@@ -30,6 +30,7 @@ struct DigitPasswordView: View {
     let constant = Constant()
     
     @Binding var enteredDigit: [Int]
+    @ObservedObject private var attemptManager = AttemptManager.shared
     let maxDigit: Int = 4
     
     var body: some View {
@@ -58,7 +59,7 @@ struct DigitPasswordView: View {
                                   weight: .light,
                                   design: .rounded)
                     )
-            }
+            }.disabled(attemptManager.attempCount >= attemptManager.maxAttemps)
         } else if let image = item as? Image {
             Button(action: {
                 if !enteredDigit.isEmpty {

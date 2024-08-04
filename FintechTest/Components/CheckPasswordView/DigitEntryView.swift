@@ -10,6 +10,7 @@ import SwiftUI
 struct DigitEntryView: View {
     @Binding var enteredDigits: [Int]
     @State private var showError: Bool = false // Evaluar este State para la vista Principal.
+    @ObservedObject private var attemptManager = AttemptManager.shared
     private let userDataBase = UserDataBase()
     
     var body: some View {
@@ -20,23 +21,29 @@ struct DigitEntryView: View {
                     index < enteredDigits.count ? Image(systemName: "circle.fill") : Image(systemName: "circle")
                 }
             }
-            .padding(.bottom, 20)
+            .padding(.bottom, 10)
             .onChange(of: enteredDigits) {
                 if enteredDigits.count == 4 {
-                    verifyPassword()
+                    
+                    if attemptManager.attempCount < attemptManager.maxAttemps {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                            verifyPassword()
+                            }
+                    }
                 } else if showError && enteredDigits.count > 0 {
                     showError = false // Resetea el error y elimina el mensaje
                 }
             }
             if showError {
-                Text("El PIN ingresado es incorrecto.")
+                Text(attemptManager.attempCount >= attemptManager.maxAttemps ? "Demasiados intentos fallidos. Bloqueado." : "Has ingresado un PIN incorrecto. \nTe quedan \(attemptManager.diffAttemps) intentos")
                     .foregroundColor(.white)
                     .font(.system(size: 18,
                                   weight: .ultraLight,
                                   design: .serif))
-                    .frame(width: 260, height: 30, alignment: .center)
+                    .frame(width: 300, height: 60, alignment: .center)
                     .background(Color.red)
                     .cornerRadius(10)
+                    .multilineTextAlignment(.center)
             }
         }.frame(width: 300, height: 120, alignment: .top)
     }
@@ -48,6 +55,7 @@ struct DigitEntryView: View {
         } else {
             print("Authentication failed")
             showError = true
+            attemptManager.attempCount += 1
             enteredDigits.removeAll()
         }
     }

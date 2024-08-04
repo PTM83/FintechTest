@@ -27,4 +27,15 @@ struct CustomElements {
     static let elements: Array<Any> = Array(1...9) + [Image(systemName: "delete.left"), 0]
 }
 
-
+// Estructura para condición de ingreso
+class AttemptManager: ObservableObject {
+    @Published var attempCount: Int = 0
+    let maxAttemps: Int = 4
+    var diffAttemps: Int {
+        return maxAttemps - attempCount
+    }
+    
+    static let shared = AttemptManager()
+    
+    private init() {}
+}
