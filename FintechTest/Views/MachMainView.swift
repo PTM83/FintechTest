@@ -10,34 +10,16 @@ import SwiftUI
 struct MachMainView: View {
 
     var body: some View {
-        VStack {
+        ZStack {
             IconHeaderView()
         }
         .frame(maxWidth: .infinity,
-               maxHeight: 160,
+               maxHeight: 195,
                alignment: .top)
         .background(CustomColors.primaryColor.toSwiftColor())
         .overlay(
-            BlockInformation()
-                .overlay(
-                    VStack {
-                        HStack {
-                            Text("Mi cuenta MACH")
-                            Spacer()
-                            Button(action: {
-                                
-                            }, 
-                                   label: {
-                                Image(systemName: IconApp.sharedInformation).rotationEffect(.degrees(-30))
-                                    .foregroundColor(.black)
-                            })
-                        }.padding(20)
-                            .font(.system(size: 18, weight: .light, design: .monospaced))
-                            .tracking(-1.9)
-                        Spacer()
-                    }
-                )
-                .padding(.top, 190)
+            BlockInformation(frameWidth: 360, frameHeight: 170)
+                .padding(.top, 122)
         )
         .navigationBarBackButtonHidden(true) // Esconder el botón de regresar
         .navigationBarHidden(true) // También puedes esconder toda la barra de navegación si es necesario
@@ -56,3 +38,17 @@ struct MachMainView: View {
 }
 
 
+
+struct HeadBlockName: View {
+    
+    var PrincipalText: String
+    var underlineText: String
+    
+    var body: some View {
+        VStack(alignment:.leading, spacing: 4) {
+            Text(PrincipalText)
+            Text(underlineText)
+                .font(.system(size: 12, weight: .thin, design: .rounded))
+        }
+    }
+}
