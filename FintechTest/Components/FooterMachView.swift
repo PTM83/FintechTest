@@ -25,14 +25,14 @@ struct FooterMachView: View {
                                            .resizable()
                                            .aspectRatio(contentMode: .fit)
                                            .frame(width:22, height:22)
-                                           .padding(.bottom, 10)
+                                           .padding(.bottom, 5)
                                        Text(key)
                                        
                                    }.padding(1)
                                })
                     ).opacity(ifPusshed ? 1 : 0.5) // Modificar por que depende si se encuentra en la ventana o no.
             }
-        }.padding(10)
+        }
             .font(.system(size: 12))
             .foregroundColor(CustomColors.primaryColor.toSwiftColor())
     }
