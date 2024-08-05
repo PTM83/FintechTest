@@ -18,8 +18,8 @@ struct MachMainView: View {
                alignment: .top)
         .background(CustomColors.primaryColor.toSwiftColor())
         .overlay(
-            BlockInformation(frameWidth: 360, frameHeight: 170)
-                .padding(.top, 122)
+            BlockInformation(frameWidth: 360, frameHeight: 200)
+                .padding(.top, 135)
         )
         .navigationBarBackButtonHidden(true) // Esconder el botón de regresar
         .navigationBarHidden(true) // También puedes esconder toda la barra de navegación si es necesario
@@ -49,6 +49,7 @@ struct HeadBlockName: View {
             Text(PrincipalText)
             Text(underlineText)
                 .font(.system(size: 12, weight: .thin, design: .rounded))
+                .tracking(0.4)
         }
     }
 }
