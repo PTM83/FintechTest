@@ -18,7 +18,8 @@ struct IconHeaderView: View {
             })
             
             Circle()
-                .stroke(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, lineWidth: 2)
+                .stroke(CustomColors.letterColor.toSwiftColor(),
+                        lineWidth: 2)
                 .frame(width: 40, height: 40)
             
             Text("Hola PABLO")
