@@ -21,6 +21,7 @@
 		02CABD642C5B3EC300D49D6E /* checkPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CABD632C5B3EC300D49D6E /* checkPasswordView.swift */; };
 		02D0DFDA2C5F3EB7008BFDCB /* MachMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0DFD92C5F3EB7008BFDCB /* MachMainView.swift */; };
 		02D0DFDD2C5F4952008BFDCB /* IconHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0DFDC2C5F4952008BFDCB /* IconHeaderView.swift */; };
+		02D0DFDF2C6095DC008BFDCB /* FooterMachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0DFDE2C6095DC008BFDCB /* FooterMachView.swift */; };
 		02F655342C5C89A200BEA3A2 /* UserDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F655332C5C89A200BEA3A2 /* UserDataBase.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		02CABD632C5B3EC300D49D6E /* checkPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkPasswordView.swift; sourceTree = "<group>"; };
 		02D0DFD92C5F3EB7008BFDCB /* MachMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachMainView.swift; sourceTree = "<group>"; };
 		02D0DFDC2C5F4952008BFDCB /* IconHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconHeaderView.swift; sourceTree = "<group>"; };
+		02D0DFDE2C6095DC008BFDCB /* FooterMachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterMachView.swift; sourceTree = "<group>"; };
 		02F655332C5C89A200BEA3A2 /* UserDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				02D0DFDC2C5F4952008BFDCB /* IconHeaderView.swift */,
+				02D0DFDE2C6095DC008BFDCB /* FooterMachView.swift */,
 			);
 			name = MatchMainView;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				02CABD5E2C59EC7700D49D6E /* DigitPasswordView.swift in Sources */,
 				02D0DFDD2C5F4952008BFDCB /* IconHeaderView.swift in Sources */,
 				02CABD5C2C58A22A00D49D6E /* model_Introduction.swift in Sources */,
+				02D0DFDF2C6095DC008BFDCB /* FooterMachView.swift in Sources */,
 				02CABD642C5B3EC300D49D6E /* checkPasswordView.swift in Sources */,
 				02955BB22C5D7746008309BC /* DigitEntryView.swift in Sources */,
 				02F655342C5C89A200BEA3A2 /* UserDataBase.swift in Sources */,
@@ -575,6 +579,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y4BTYYHQY9;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;

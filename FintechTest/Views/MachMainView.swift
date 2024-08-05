@@ -20,7 +20,7 @@ struct MachMainView: View {
         .overlay(
             RoundedRectangle(cornerRadius: 10)
                 .foregroundColor(CustomColors.letterColor.toSwiftColor())
-                .frame(width: .infinity,
+                .frame(width: 300,
                        height: 200)
                 .shadow(color: CustomColors.digitColor.toSwiftColor().opacity(0.5), radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, y: 5)
                 .padding()
@@ -28,8 +28,12 @@ struct MachMainView: View {
         )
         .navigationBarBackButtonHidden(true) // Esconder el botón de regresar
         .navigationBarHidden(true) // También puedes esconder toda la barra de navegación si es necesario
-
+        
         Spacer()
+        
+        // Vista del Footer
+        FooterMachView()
+        
     }
 }
 

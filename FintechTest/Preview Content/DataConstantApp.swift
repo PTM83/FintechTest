@@ -28,6 +28,18 @@ struct CustomElements {
     static let elements: Array<Any> = Array(1...9) + [Image(systemName: "delete.left"), 0]
 }
 
+struct IconApp {
+    
+    static let footerIcon: [(String, String)] = [("Inicio","house"),
+        ("Transferir","arrow.left.arrow.right"),
+        ("Pago QR","qrcode"),
+        ("Tarjetas","creditcard"),
+        ("Inversiones","dollarsign")]
+    
+    static let iconHeader: Array<String> = ["bell","questionmark.circle"]
+    
+}
+
 // Estructura para condición de ingreso
 class AttemptManager: ObservableObject {
     @Published var isAthenticated: Bool = false

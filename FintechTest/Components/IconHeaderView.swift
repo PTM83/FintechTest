@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct IconHeaderView: View {
-    var iconHeader: Array<String> = ["bell","questionmark.circle"]
+    
     var body: some View {
         HStack(alignment: .center) {
-            Image(systemName: "text.alignleft")
-                .font(.system(size: 25))
+            Button(action: {},
+                   label: {
+                Image(systemName: "text.alignleft")
+                    .font(.system(size: 25))
+            })
             
             Circle()
                 .stroke(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, lineWidth: 2)
@@ -24,7 +27,7 @@ struct IconHeaderView: View {
             Spacer()
             
             
-            ForEach(iconHeader, id: \.self) { icon in
+            ForEach(IconApp.iconHeader, id: \.self) { icon in
                 Image(systemName: icon)
             }
             .font(.system(size: 25))
@@ -40,3 +43,7 @@ struct IconHeaderView: View {
 #Preview {
     IconHeaderView()
 }
+
+/*
+ Nota: Ver la forma de transformar la Vista Button en una complement que se pueda reutilizar y reciba 2 parámetros de entrada, una función y la Imagen.
+ */
