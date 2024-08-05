@@ -38,6 +38,8 @@ struct IconApp {
     
     static let iconHeader: Array<String> = ["bell","questionmark.circle"]
     
+    static let sharedInformation = "point.3.connected.trianglepath.dotted"
+    
 }
 
 // Estructura para condición de ingreso
