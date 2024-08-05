@@ -9,6 +9,8 @@ import SwiftUI
 
 struct IconHeaderView: View {
     
+    let colorTest: Color = CustomColors.letterColor.toSwiftColor()
+    
     var body: some View {
         HStack(alignment: .center) {
             Button(action: {},
@@ -18,9 +20,12 @@ struct IconHeaderView: View {
             })
             
             Circle()
-                .stroke(CustomColors.letterColor.toSwiftColor(),
+                .stroke(colorTest,
                         lineWidth: 2)
                 .frame(width: 40, height: 40)
+                .overlay(
+                    Image(systemName: "person.fill").foregroundColor(colorTest).font(.system(size: 28))
+                )
             
             Text("Hola PABLO")
                 .font(.system(size: 25))
@@ -36,7 +41,7 @@ struct IconHeaderView: View {
         }
         .padding()
         .padding(.bottom, 50)
-        .foregroundColor(CustomColors.letterColor.toSwiftColor())
+        .foregroundColor(colorTest)
         .background(CustomColors.primaryColor.toSwiftColor())
     }
 }
