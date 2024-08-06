@@ -43,7 +43,7 @@ struct completeTextBlock: View {
     var colorPrincipal: Color
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: 15) {
             
             HStack(alignment:.firstTextBaseline) {
                 HeadBlockName(PrincipalText: PrincipalText, underlineText: underlineText)
@@ -66,7 +66,7 @@ struct completeTextBlock: View {
                          colorPrincipal: colorPrincipal)
             
             Divider()
-                .frame(width: 340)
+                .frame(height:1)
                 .background(.gray)
             Button(action: {
                 // ALGO DEBE HACER ACÁ
@@ -78,7 +78,7 @@ struct completeTextBlock: View {
             })
             
         }
-        .padding(20)
+        .padding([.leading, .trailing, .top],10)
     }
     
 
