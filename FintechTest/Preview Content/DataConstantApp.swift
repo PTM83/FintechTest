@@ -30,11 +30,19 @@ struct CustomElements {
 
 struct IconApp {
     
-    static let footerIcon: [(String, String)] = [("Inicio","house"),
+    static let footerIcon: [(text: String, icon: String)] = [("Inicio","house"),
         ("Transferir","arrow.left.arrow.right"),
         ("Pago QR","qrcode"),
         ("Tarjetas","creditcard"),
         ("Inversiones","dollarsign")]
+    
+    static let carruselMainView: [(String, String)] = [
+    ("Compra en cuotas","creditcard"),
+    ("Invita y gana","person.badge.plus"),
+    ("Beneficios BciPlus+","gift"),
+    ("Seguros y Servicios","newspaper.fill"),
+    ("Conexiones y alianzas","person.2.fill"),
+    ("Recarga y retira dinero","dollarsign")]
     
     static let iconHeader: Array<String> = ["bell","questionmark.circle"]
     
