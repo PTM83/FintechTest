@@ -65,9 +65,12 @@ struct completeTextBlock: View {
                          valueText: valueText,
                          colorPrincipal: colorPrincipal)
             
-            Rectangle()
-                .frame(width: .infinity, height: 1).foregroundColor(.gray)
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/,
+            Divider()
+                .frame(width: 340)
+                .background(.gray)
+            Button(action: {
+                // ALGO DEBE HACER ACÁ
+            },
                    label: {
                 Text("Ver mis movimientos")
                     .font(.system(size: 20, weight: .semibold, design: .rounded)).frame(maxWidth: .infinity, alignment: .center)
