@@ -10,6 +10,7 @@ import SwiftUI
 struct IconHeaderView: View {
     
     let colorTest: Color = CustomColors.letterColor.toSwiftColor()
+    let mainColor: Color = CustomColors.primaryColor.toSwiftColor()
     
     var body: some View {
         HStack(alignment: .center) {
@@ -32,7 +33,6 @@ struct IconHeaderView: View {
             
             Spacer()
             
-            
             ForEach(IconApp.iconHeader, id: \.self) { icon in
                 Image(systemName: icon)
             }
@@ -40,9 +40,9 @@ struct IconHeaderView: View {
             
         }
         .padding()
-        .padding(.bottom, 50)
+        .padding(.bottom, 120)
         .foregroundColor(colorTest)
-        .background(CustomColors.primaryColor.toSwiftColor())
+        .background(mainColor)
     }
 }
 
