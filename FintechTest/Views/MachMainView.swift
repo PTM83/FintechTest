@@ -8,28 +8,36 @@
 import SwiftUI
 
 struct MachMainView: View {
-
+    
+    var mainColor:Color = CustomColors.primaryColor.toSwiftColor()
+    
     var body: some View {
         ZStack {
-            IconHeaderView()
-            Spacer()
+            mainColor.ignoresSafeArea() // Asegura que el fondo sea blanco
+            VStack {
+                IconHeaderView()
+                    .safeAreaInset(edge: .top, alignment: .leading) {
+                        Spacer().frame(height: 0) // Asegura que el header esté en el top
+                    }
+                Spacer()
+            }
         }
         .frame(maxWidth: .infinity,
                maxHeight: 195,
                alignment: .top)
-        .background(CustomColors.primaryColor.toSwiftColor())
+        .background()
         .overlay(
             BlockInformation(frameWidth: 360, frameHeight: 200)
-                .padding(.top, 135)
+                .padding(.top, 145)
         )
 //        .navigationBarBackButtonHidden(true) // Esconder el botón de regresar
         .navigationBarHidden(true) // También puedes esconder toda la barra de navegación si es necesario
         
         // Slide de Suscripciones
         
-        Spacer(minLength: 80)
+        Spacer(minLength: 90)
         RoundedRectangle(cornerRadius: 10)
-            .foregroundColor(CustomColors.primaryColor.toSwiftColor())
+            .foregroundColor(mainColor)
             .frame(width: 360, height: 100)
             .shadow(color: CustomColors.digitColor.toSwiftColor().opacity(0.5), radius: 10, y: 5)
         CarruselMainView(textTitle: "¿Que quieres hacer hoy?")
