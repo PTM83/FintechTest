@@ -56,7 +56,7 @@ struct CarruselMainView: View {
                     .padding([.leading, .trailing, .bottom],8)
                     .multilineTextAlignment(.leading)
             }
-            .frame(width: 120, height: 120)
+            .frame(width: 160, height: 100)
             .background(Color.white)
             .cornerRadius(10)
             .shadow(color: Color.black.opacity(0.3), radius: 5, x: 0, y: 2)
