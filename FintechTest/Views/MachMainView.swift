@@ -25,8 +25,8 @@ struct MachMainView: View {
         .navigationBarHidden(true) // También puedes esconder toda la barra de navegación si es necesario
         
         Spacer()
+        // Vista del Footer
             .safeAreaInset(edge: .bottom, spacing: 0) {
-                // Vista del Footer
                 FooterMachView()
         }
         
