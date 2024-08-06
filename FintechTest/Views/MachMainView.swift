@@ -12,6 +12,7 @@ struct MachMainView: View {
     var body: some View {
         ZStack {
             IconHeaderView()
+            Spacer()
         }
         .frame(maxWidth: .infinity,
                maxHeight: 195,
@@ -21,8 +22,18 @@ struct MachMainView: View {
             BlockInformation(frameWidth: 360, frameHeight: 200)
                 .padding(.top, 135)
         )
-        .navigationBarBackButtonHidden(true) // Esconder el botón de regresar
+//        .navigationBarBackButtonHidden(true) // Esconder el botón de regresar
         .navigationBarHidden(true) // También puedes esconder toda la barra de navegación si es necesario
+        
+        // Slide de Suscripciones
+        
+        Spacer(minLength: 80)
+        RoundedRectangle(cornerRadius: 10)
+            .foregroundColor(CustomColors.primaryColor.toSwiftColor())
+            .frame(width: 360, height: 100)
+            .shadow(color: CustomColors.digitColor.toSwiftColor().opacity(0.5), radius: 10, y: 5)
+        CarruselMainView(textTitle: "¿Que quieres hacer hoy?")
+            .padding(20)
         
         Spacer()
         // Vista del Footer
@@ -53,3 +64,4 @@ struct HeadBlockName: View {
         }
     }
 }
+
