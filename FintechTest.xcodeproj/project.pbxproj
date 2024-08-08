@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0208B6322C6479E700BE13BA /* InfoPrincipalBlockMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B6312C6479E700BE13BA /* InfoPrincipalBlockMainView.swift */; };
 		02955BB22C5D7746008309BC /* DigitEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02955BB12C5D7746008309BC /* DigitEntryView.swift */; };
 		02C0EB332C6328D4007031EF /* PrincipalMachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0EB322C6328D4007031EF /* PrincipalMachView.swift */; };
 		02C0EB352C633ADF007031EF /* HeaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0EB342C633ADF007031EF /* HeaderMainView.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0208B6312C6479E700BE13BA /* InfoPrincipalBlockMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPrincipalBlockMainView.swift; sourceTree = "<group>"; };
 		02955BB12C5D7746008309BC /* DigitEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitEntryView.swift; sourceTree = "<group>"; };
 		02C0EB322C6328D4007031EF /* PrincipalMachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalMachView.swift; sourceTree = "<group>"; };
 		02C0EB342C633ADF007031EF /* HeaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderMainView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0208B6302C64793000BE13BA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				02D0DFE02C614062008BFDCB /* BlockInformation.swift */,
+				02CABD5F2C59EDC000D49D6E /* DataConstantApp.swift */,
+				02D0DFD92C5F3EB7008BFDCB /* MachMainView.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		0208B6332C647AE800BE13BA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		02CABD242C58981E00D49D6E = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +153,8 @@
 		02CABD2F2C58981E00D49D6E /* FintechTest */ = {
 			isa = PBXGroup;
 			children = (
+				0208B6332C647AE800BE13BA /* ViewModel */,
+				0208B6302C64793000BE13BA /* Other */,
 				02FAD9C32C5C3194007EE8EF /* App */,
 				02FAD9C22C5C30FA007EE8EF /* Assets */,
 				02FAD9BE2C5C2F66007EE8EF /* Components */,
@@ -147,7 +168,6 @@
 		02CABD362C58982200D49D6E /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				02CABD5F2C59EDC000D49D6E /* DataConstantApp.swift */,
 				02CABD372C58982200D49D6E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -184,10 +204,10 @@
 			children = (
 				02D0DFDC2C5F4952008BFDCB /* IconHeaderView.swift */,
 				02D0DFDE2C6095DC008BFDCB /* FooterMachView.swift */,
-				02D0DFE02C614062008BFDCB /* BlockInformation.swift */,
 				02D0DFE22C61D0B5008BFDCB /* CarruselMainView.swift */,
 				02C0EB342C633ADF007031EF /* HeaderMainView.swift */,
 				02C0EB372C6345FD007031EF /* BlockPutInformationView.swift */,
+				0208B6312C6479E700BE13BA /* InfoPrincipalBlockMainView.swift */,
 			);
 			name = MatchMainView;
 			sourceTree = "<group>";
@@ -207,7 +227,6 @@
 			isa = PBXGroup;
 			children = (
 				02CABD322C58981E00D49D6E /* ViewIntroduction.swift */,
-				02D0DFD92C5F3EB7008BFDCB /* MachMainView.swift */,
 				02D0DFE42C6314CC008BFDCB /* TransferView.swift */,
 				02D0DFE82C63152D008BFDCB /* CreditCardView.swift */,
 				02D0DFEA2C6315BC008BFDCB /* InvestAccountView.swift */,
@@ -387,6 +406,7 @@
 				02D0DFDA2C5F3EB7008BFDCB /* MachMainView.swift in Sources */,
 				02C0EB332C6328D4007031EF /* PrincipalMachView.swift in Sources */,
 				02CABD5E2C59EC7700D49D6E /* DigitPasswordView.swift in Sources */,
+				0208B6322C6479E700BE13BA /* InfoPrincipalBlockMainView.swift in Sources */,
 				02D0DFDD2C5F4952008BFDCB /* IconHeaderView.swift in Sources */,
 				02CABD5C2C58A22A00D49D6E /* model_Introduction.swift in Sources */,
 				02D0DFDF2C6095DC008BFDCB /* FooterMachView.swift in Sources */,
