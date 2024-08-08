@@ -46,13 +46,14 @@ struct MainBankView: View {
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack{
                             ForEach(1..<5, id:\.self) { _ in
-                                BlockPutInformationView(percentWidth: 0.13,
+                                BlockPutInformationView(percentWidth: 0.12,
                                                         percentHeight: 0.88,
                                                         xPosition: 0,
                                                         yPosition: 0,
+                                                        shadowColor: .white,
                                                         secondaryColor: letterColor)
                             }
-                        }
+                        }.background(.white)
                         
                     }
                 }.padding(20)
