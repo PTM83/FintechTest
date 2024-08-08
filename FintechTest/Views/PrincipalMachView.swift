@@ -11,6 +11,13 @@ struct PrincipalMachView: View {
     
     var mainColor: Color = CustomColors.primaryColor.toSwiftColor()
     
+    init() {
+        // Personalizar la apariencia del TabView
+        UITabBar.appearance().backgroundColor = UIColor.clear
+        UITabBar.appearance().unselectedItemTintColor = UIColor.gray
+        UITabBar.appearance().barTintColor = UIColor.white
+    }
+    
     var body: some View {
         TabView {
             MainBankView()
