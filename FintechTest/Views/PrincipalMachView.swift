@@ -8,10 +8,39 @@
 import SwiftUI
 
 struct PrincipalMachView: View {
+    
+    var mainColor: Color = CustomColors.primaryColor.toSwiftColor()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            MainBankView()
+                .tabItem {
+                    Label("Inicio", systemImage: "house")
+                }
+            
+            TransferView()
+                .tabItem {
+                    Label("Transferir", systemImage: "arrow.left.arrow.right")
+                }.tag(1)
+            
+            QRPaymentView()
+                .tabItem {
+                    Label("Pago QR", systemImage:"qrcode")
+                }
+            
+            CreditCardView()
+                .tabItem {
+                    Label("Tarjetas", systemImage: "creditcard")
+                }
+            
+            InvestAccountView()
+                .tabItem {
+                    Label("Inversiones", systemImage: "dollarsign")
+                }
+        }.tint(mainColor)
     }
 }
+
 
 #Preview {
     PrincipalMachView()

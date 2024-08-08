@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FooterMachView: View {
     var ifPusshed: Bool = true
+    
     var body: some View {
         HStack {
             ForEach(IconApp.footerIcon, id:\.0) { key, value in

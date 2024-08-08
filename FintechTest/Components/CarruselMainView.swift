@@ -59,7 +59,7 @@ struct CarruselMainView: View {
             .frame(width: 160, height: 100)
             .background(Color.white)
             .cornerRadius(10)
-            .shadow(color: Color.black.opacity(0.3), radius: 5, x: 0, y: 2)
+            .shadow(color: Color.gray.opacity(0.2), radius: 3, x: 0, y: 2)
         }
     }
     

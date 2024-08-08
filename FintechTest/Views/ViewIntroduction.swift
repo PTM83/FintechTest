@@ -31,7 +31,7 @@ struct ViewIntroduction: View {
                 .foregroundColor(CustomColors.digitColor.toSwiftColor())
             }
             .navigationDestination(isPresented: $attemptManager.isAthenticated) {
-                MachMainView()
+                PrincipalMachView()
             }
         }
     }

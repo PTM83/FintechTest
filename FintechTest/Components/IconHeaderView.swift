@@ -14,6 +14,7 @@ struct IconHeaderView: View {
     
     var body: some View {
         HStack(alignment: .center) {
+            
             Button(action: {},
                    label: {
                 Image(systemName: "text.alignleft")
@@ -34,15 +35,18 @@ struct IconHeaderView: View {
             Spacer()
             
             ForEach(IconApp.iconHeader, id: \.self) { icon in
-                Image(systemName: icon)
+                Button(action: {
+                    // Agregar las vistas o función que permita ir a otra vista, para cada icono
+                }, label: {
+                    Image(systemName: icon)
+                    
+                })
             }
             .font(.system(size: 25))
             
         }
         .padding()
-        .padding(.bottom, 120)
         .foregroundColor(colorTest)
-        .background(mainColor)
     }
 }
 
