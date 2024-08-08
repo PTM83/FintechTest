@@ -44,7 +44,9 @@ struct PrincipalMachView: View {
                 .tabItem {
                     Label("Inversiones", systemImage: "dollarsign")
                 }
-        }.tint(mainColor)
+        }
+        .tint(mainColor)
+        .preferredColorScheme(.light)
     }
 }
 
