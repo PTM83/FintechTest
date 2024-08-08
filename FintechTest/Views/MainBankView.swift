@@ -48,10 +48,10 @@ struct MainBankView: View {
                                                         percentHeight: 0.88,
                                                         xPosition: 0,
                                                         yPosition: 0,
-                                                        shadowColor: .white,
+                                                        shadowColor: secondaryColor,
                                                         secondaryColor: letterColor)
                             }
-                        }
+                        }.background(secondaryColor)
                     }
                 }.padding(20)
             }
