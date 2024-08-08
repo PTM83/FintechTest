@@ -13,6 +13,7 @@ struct BlockPutInformationView: View {
     var xPosition: CGFloat
     var yPosition: CGFloat
     var radius: Double = 10
+    var shadowColor:Color = .gray
     
     var secondaryColor: Color = CustomColors.letterColor.toSwiftColor()
     
@@ -22,7 +23,7 @@ struct BlockPutInformationView: View {
             .frame(width: UIScreen.main.bounds.width*(1-percentWidth),
                    //El valor debe modificarse si se agrega un gesto
                    height: UIScreen.main.bounds.height*(1-percentHeight)).foregroundStyle(secondaryColor)
-            .shadow(color: .gray, radius: radius)
+            .shadow(color: shadowColor, radius: radius)
             .offset(x: xPosition, y: yPosition)
         
     }
