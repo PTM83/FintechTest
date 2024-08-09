@@ -12,50 +12,47 @@ struct TransferView: View {
     var primaryColor: Color = CustomColors.primaryColor.toSwiftColor()
     var secondaryColor:Color = CustomColors.letterColor.toSwiftColor()
     
+    private let columns = [
+        GridItem(.flexible(), spacing:20),
+        GridItem(.flexible(), spacing:20),
+        GridItem(.flexible(), spacing:20)
+    ]
+    
+    let digitColor: Color = CustomColors.digitColor.toSwiftColor()
+    
     var body: some View {
-//        NavigationView {
-//            VStack {
-//                Text("Transferencia")
-//                
-//                
-//            }
-//            .frame(maxWidth: .infinity, maxHeight: .infinity)
-//            .background(.red)
-//            .toolbar {
-//                ToolbarItem(placement: .topBarLeading) {
-//                    Text("Transferencias")
-//                    
-//                }
-//                
-//                ToolbarItem(placement: .topBarTrailing) {
-//                    NavigationLink(destination: IconHeaderView()){
-//                        Image(systemName: "questionmark.circle")
-//                            .resizable()
-//                            .aspectRatio(contentMode: .fit)
-//                            .frame(width: 25, height: 25)
-//                    }
-//                }
-//                
-//            }
-//            .foregroundColor(secondaryColor)
-//            .font(.system(size: 25,
-//                          weight: .medium, 
-//                          design: .rounded))
-//            .toolbarBackground(primaryColor, for: .automatic)
-//            .toolbarBackground(.visible, for: .navigationBar)
-//            .padding()
-//        }
+        
+        
         
         ToolBarView(nameView:"Transferencia", iconView: "questionmark.circle") {
-            IconHeaderView()
+            TestView()
         } content: {
-            Text("Prueba")
-                .foregroundStyle(.blue)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(.red)
+//            Contenido de la Vista
+            
+            VStack{
+                Text("¿Qué quieres hacer hoy?")
+                    .foregroundStyle(digitColor)
+                    .padding()
+                
+                BlockPutInformationView(percentWidth: 0.07, percentHeight: 0.86, xPosition: 0, yPosition: 0, shadowColor: digitColor)
+                
+                
+                
+                Text("Otras formas de transferir")
+                    
+                    .padding(10)
+                
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(IconApp.wayTransfer, id: \.0) { description, iconName  in
+                        WayofTransferView(iconName: iconName, description: description)
+                        
+                    }
+                }.padding()
+                Spacer()
+            }.foregroundStyle(digitColor)
+                .font(.system(size: 25, weight: .light, design: .rounded))
+            
         }
-        
-        
     }
 }
 
