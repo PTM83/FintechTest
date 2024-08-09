@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct TestView: View {
+    var mainColor:Color = CustomColors.primaryColor.toSwiftColor()
+    var letterColor:Color = CustomColors.letterColor.toSwiftColor()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack{
+            Text("Test View")
+                .font(.system(size: 50, weight: .bold, design: .rounded))
+                .foregroundStyle(letterColor)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(mainColor)
+        }
+//        .toolbarBackground(mainColor, for: .automatic)
+//        .toolbarBackground(.visible, for: .navigationBar)
+        
     }
 }
 
