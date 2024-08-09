@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct InvestAccountView: View {
+    
     var body: some View {
-        Text("Invest Account View 💵")
+        ToolBarView(nameView: "Inversiones", iconView: "questionmark.circle") {
+            TestView() // Modificar la vista
+        } content: {
+            Text("Invest Account View 💵")
+        }
+        
     }
 }
 
