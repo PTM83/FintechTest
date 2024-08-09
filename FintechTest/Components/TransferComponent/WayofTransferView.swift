@@ -16,7 +16,7 @@ struct WayofTransferView: View {
     
     var body: some View {
         
-        BlockPutInformationView(percentWidth: 0.7, percentHeight: 0.89, xPosition: 0, yPosition: 0, shadowColor: digitColor)
+        BlockPutInformationView(percentWidth: 0.7, percentHeight: 0.89, xPosition: 0, yPosition: 0, shadowColor: .gray)
             .overlay(
                 
                 VStack(alignment: .leading, spacing:10){

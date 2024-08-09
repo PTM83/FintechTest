@@ -9,7 +9,12 @@ import SwiftUI
 
 struct CreditCardView: View {
     var body: some View {
-        Text("Credit Card 💳")
+        ToolBarView(nameView:"Mis tarjetas", iconView: "questionmark.circle") {
+            TestView()
+        } content: {
+            Text("Credit Card 💳")
+                .foregroundStyle(.black)
+        }
     }
 }
 

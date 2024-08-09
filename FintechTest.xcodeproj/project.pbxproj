@@ -12,6 +12,7 @@
 		0208B6372C6548E900BE13BA /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B6362C6548E900BE13BA /* TestView.swift */; };
 		0208B6392C654D5500BE13BA /* UINavigationController+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B6382C654D5500BE13BA /* UINavigationController+Appearance.swift */; };
 		0208B63C2C65BC9E00BE13BA /* WayofTransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B63B2C65BC9E00BE13BA /* WayofTransferView.swift */; };
+		0208B63E2C665EDC00BE13BA /* MainToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B63D2C665EDC00BE13BA /* MainToolBarView.swift */; };
 		02955BB22C5D7746008309BC /* DigitEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02955BB12C5D7746008309BC /* DigitEntryView.swift */; };
 		02C0EB332C6328D4007031EF /* PrincipalMachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0EB322C6328D4007031EF /* PrincipalMachView.swift */; };
 		02C0EB352C633ADF007031EF /* HeaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0EB342C633ADF007031EF /* HeaderMainView.swift */; };
@@ -64,6 +65,7 @@
 		0208B6362C6548E900BE13BA /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		0208B6382C654D5500BE13BA /* UINavigationController+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Appearance.swift"; sourceTree = "<group>"; };
 		0208B63B2C65BC9E00BE13BA /* WayofTransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayofTransferView.swift; sourceTree = "<group>"; };
+		0208B63D2C665EDC00BE13BA /* MainToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainToolBarView.swift; sourceTree = "<group>"; };
 		02955BB12C5D7746008309BC /* DigitEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitEntryView.swift; sourceTree = "<group>"; };
 		02C0EB322C6328D4007031EF /* PrincipalMachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalMachView.swift; sourceTree = "<group>"; };
 		02C0EB342C633ADF007031EF /* HeaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderMainView.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				02D0DFF02C63213A008BFDCB /* QRPaymentView.swift */,
 				02C0EB322C6328D4007031EF /* PrincipalMachView.swift */,
 				0208B6362C6548E900BE13BA /* TestView.swift */,
+				0208B63D2C665EDC00BE13BA /* MainToolBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				02C0EB382C6345FD007031EF /* BlockPutInformationView.swift in Sources */,
 				02CABD642C5B3EC300D49D6E /* checkPasswordView.swift in Sources */,
 				02D0DFEF2C6316DF008BFDCB /* SimpleButtonView.swift in Sources */,
+				0208B63E2C665EDC00BE13BA /* MainToolBarView.swift in Sources */,
 				02D0DFEB2C6315BC008BFDCB /* InvestAccountView.swift in Sources */,
 				0208B63C2C65BC9E00BE13BA /* WayofTransferView.swift in Sources */,
 				02D0DFF12C63213B008BFDCB /* QRPaymentView.swift in Sources */,
