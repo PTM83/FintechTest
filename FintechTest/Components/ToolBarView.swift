@@ -25,8 +25,8 @@ struct ToolBarView <Destination: View, Content: View>: View {
                 content()
 
             }
-
             .toolbar {
+            
                 ToolbarItem(placement: .topBarLeading) {
                     Text(nameView)
                     
@@ -47,12 +47,31 @@ struct ToolBarView <Destination: View, Content: View>: View {
                 .toolbarBackground(primaryColor, for: .automatic)
                 .toolbarBackground(.visible, for: .navigationBar)
         }
+        .onAppear {
+            // Aplicar la personalización globalmente
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            
+            // Personaliza la apariencia del botón de retroceso
+            appearance.backButtonAppearance.normal.titleTextAttributes = [
+                .foregroundColor: UIColor(primaryColor), // Color del texto
+                .font: UIFont.systemFont(ofSize: 18, weight: .bold) // Fuente del texto
+            ]
+            
+            // Personaliza la flecha de retroceso
+            appearance.setBackIndicatorImage(UIImage(systemName: "arrow.left")?.withTintColor(.init(primaryColor),renderingMode: .alwaysOriginal), transitionMaskImage: UIImage(systemName: "arrow.left"))
+            
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().compactAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+            
+        }
     }
 }
 
 #Preview {
     ToolBarView(nameView: "Hello", iconView: "person"){
-        IconHeaderView()
+        TestView()
     } content: {
         Text("Transferencia")
             .foregroundStyle(.blue)
