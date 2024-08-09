@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0208B6322C6479E700BE13BA /* InfoPrincipalBlockMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B6312C6479E700BE13BA /* InfoPrincipalBlockMainView.swift */; };
 		0208B6352C65212700BE13BA /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B6342C65212700BE13BA /* ToolBarView.swift */; };
+		0208B6372C6548E900BE13BA /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B6362C6548E900BE13BA /* TestView.swift */; };
+		0208B6392C654D5500BE13BA /* UINavigationController+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B6382C654D5500BE13BA /* UINavigationController+Appearance.swift */; };
+		0208B63C2C65BC9E00BE13BA /* WayofTransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B63B2C65BC9E00BE13BA /* WayofTransferView.swift */; };
 		02955BB22C5D7746008309BC /* DigitEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02955BB12C5D7746008309BC /* DigitEntryView.swift */; };
 		02C0EB332C6328D4007031EF /* PrincipalMachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0EB322C6328D4007031EF /* PrincipalMachView.swift */; };
 		02C0EB352C633ADF007031EF /* HeaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0EB342C633ADF007031EF /* HeaderMainView.swift */; };
@@ -58,6 +61,9 @@
 /* Begin PBXFileReference section */
 		0208B6312C6479E700BE13BA /* InfoPrincipalBlockMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPrincipalBlockMainView.swift; sourceTree = "<group>"; };
 		0208B6342C65212700BE13BA /* ToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
+		0208B6362C6548E900BE13BA /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		0208B6382C654D5500BE13BA /* UINavigationController+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Appearance.swift"; sourceTree = "<group>"; };
+		0208B63B2C65BC9E00BE13BA /* WayofTransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayofTransferView.swift; sourceTree = "<group>"; };
 		02955BB12C5D7746008309BC /* DigitEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitEntryView.swift; sourceTree = "<group>"; };
 		02C0EB322C6328D4007031EF /* PrincipalMachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalMachView.swift; sourceTree = "<group>"; };
 		02C0EB342C633ADF007031EF /* HeaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderMainView.swift; sourceTree = "<group>"; };
@@ -121,6 +127,7 @@
 				02D0DFE02C614062008BFDCB /* BlockInformation.swift */,
 				02CABD5F2C59EDC000D49D6E /* DataConstantApp.swift */,
 				02D0DFD92C5F3EB7008BFDCB /* MachMainView.swift */,
+				0208B6382C654D5500BE13BA /* UINavigationController+Appearance.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -130,6 +137,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0208B63A2C65BC7100BE13BA /* TransferComponent */ = {
+			isa = PBXGroup;
+			children = (
+				0208B63B2C65BC9E00BE13BA /* WayofTransferView.swift */,
+			);
+			path = TransferComponent;
 			sourceTree = "<group>";
 		};
 		02CABD242C58981E00D49D6E = {
@@ -217,6 +232,7 @@
 		02FAD9BE2C5C2F66007EE8EF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0208B63A2C65BC7100BE13BA /* TransferComponent */,
 				02D0DFDB2C5F492A008BFDCB /* MatchMainView */,
 				02FAD9C12C5C30D6007EE8EF /* CheckPasswordView */,
 				02FAD9C02C5C30C4007EE8EF /* DigitPasswordView */,
@@ -236,6 +252,7 @@
 				02D0DFEC2C631631008BFDCB /* MainBankView.swift */,
 				02D0DFF02C63213A008BFDCB /* QRPaymentView.swift */,
 				02C0EB322C6328D4007031EF /* PrincipalMachView.swift */,
+				0208B6362C6548E900BE13BA /* TestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -404,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02CABD602C59EDC000D49D6E /* DataConstantApp.swift in Sources */,
+				0208B6372C6548E900BE13BA /* TestView.swift in Sources */,
 				02CABD332C58981E00D49D6E /* ViewIntroduction.swift in Sources */,
 				02D0DFE12C614062008BFDCB /* BlockInformation.swift in Sources */,
 				02D0DFDA2C5F3EB7008BFDCB /* MachMainView.swift in Sources */,
@@ -413,10 +431,12 @@
 				02D0DFDD2C5F4952008BFDCB /* IconHeaderView.swift in Sources */,
 				02CABD5C2C58A22A00D49D6E /* model_Introduction.swift in Sources */,
 				02D0DFDF2C6095DC008BFDCB /* FooterMachView.swift in Sources */,
+				0208B6392C654D5500BE13BA /* UINavigationController+Appearance.swift in Sources */,
 				02C0EB382C6345FD007031EF /* BlockPutInformationView.swift in Sources */,
 				02CABD642C5B3EC300D49D6E /* checkPasswordView.swift in Sources */,
 				02D0DFEF2C6316DF008BFDCB /* SimpleButtonView.swift in Sources */,
 				02D0DFEB2C6315BC008BFDCB /* InvestAccountView.swift in Sources */,
+				0208B63C2C65BC9E00BE13BA /* WayofTransferView.swift in Sources */,
 				02D0DFF12C63213B008BFDCB /* QRPaymentView.swift in Sources */,
 				02955BB22C5D7746008309BC /* DigitEntryView.swift in Sources */,
 				02D0DFED2C631631008BFDCB /* MainBankView.swift in Sources */,
