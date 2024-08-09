@@ -44,6 +44,13 @@ struct IconApp {
     ("Conexiones y alianzas","person.2.fill"),
     ("Recarga y retira dinero","dollarsign")]
     
+    static let wayTransfer: [(String, String)] = [
+    ("Link de cobro","link"),
+    ("QR     MACH","qrcode"),
+    ("A cuentas bancarias","dollarsign.square"),
+    ("Al extranjero","globe")
+    ]
+    
     static let iconHeader: Array<String> = ["bell","questionmark.circle"]
     
     static let sharedInformation = "point.3.connected.trianglepath.dotted"
