@@ -20,7 +20,7 @@ struct PrincipalMachView: View {
     
     var body: some View {
         TabView {
-            MainBankView()
+            BankMainView()
                 .tabItem {
                     Label("Inicio", systemImage: "house")
                 }

@@ -27,6 +27,7 @@ struct MainToolBarView<Content: View, Destination: View>: View {
     var personName: String
     var destinationOne: () -> Destination
     var destinationTwo: () -> Destination
+    var destinationTree: () -> Destination
     var content: () -> Content
     
     private let constantSize: [String:CGFloat] = [
@@ -73,7 +74,7 @@ struct MainToolBarView<Content: View, Destination: View>: View {
                         NavigationLink(destination: destinationTwo()) {
                             Image(systemName: "bell")
                         }
-                        NavigationLink(destination: destinationTwo()) {
+                        NavigationLink(destination: destinationTree()) {
                             Image(systemName: "questionmark.circle")
                         }
                     }
@@ -84,6 +85,15 @@ struct MainToolBarView<Content: View, Destination: View>: View {
                               design: .rounded))
                 .toolbarBackground(mainColor, for: .automatic)
                 .toolbarBackground(.visible, for: .navigationBar)
+//                .onAppear {
+//                    let appearance = UITabBarAppearance()
+//                                    appearance.configureWithOpaqueBackground()
+//                                    appearance.backgroundColor = UIColor(mainColor) // Establece el color de fondo del tabBar
+//                                    appearance.shadowColor = UIColor(mainColor) // Establece el color de la línea de separación
+//
+//                                    UITabBar.appearance().standardAppearance = appearance
+//                                    UITabBar.appearance().scrollEdgeAppearance = appearance
+//                }
         }
     }
 }
@@ -95,6 +105,9 @@ struct MainToolBarView<Content: View, Destination: View>: View {
             TestView() // Primera vista de destino
         },
         destinationTwo: {
+            TestView() // Segunda vista de destino
+        },
+        destinationTree: {
             TestView() // Segunda vista de destino
         },
         content: {
