@@ -16,6 +16,7 @@
 		0208B6402C69B5E600BE13BA /* BankMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B63F2C69B5E600BE13BA /* BankMainView.swift */; };
 		0208B6422C6B9A8300BE13BA /* BlockInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B6412C6B9A8300BE13BA /* BlockInformationView.swift */; };
 		0208B6442C6BEFC600BE13BA /* DraggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B6432C6BEFC600BE13BA /* DraggingView.swift */; };
+		0208B6462C6CF10F00BE13BA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B6452C6CF10F00BE13BA /* Extensions.swift */; };
 		02955BB22C5D7746008309BC /* DigitEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02955BB12C5D7746008309BC /* DigitEntryView.swift */; };
 		02C0EB332C6328D4007031EF /* PrincipalMachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0EB322C6328D4007031EF /* PrincipalMachView.swift */; };
 		02C0EB352C633ADF007031EF /* HeaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0EB342C633ADF007031EF /* HeaderMainView.swift */; };
@@ -72,6 +73,7 @@
 		0208B63F2C69B5E600BE13BA /* BankMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankMainView.swift; sourceTree = "<group>"; };
 		0208B6412C6B9A8300BE13BA /* BlockInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockInformationView.swift; sourceTree = "<group>"; };
 		0208B6432C6BEFC600BE13BA /* DraggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggingView.swift; sourceTree = "<group>"; };
+		0208B6452C6CF10F00BE13BA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		02955BB12C5D7746008309BC /* DigitEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitEntryView.swift; sourceTree = "<group>"; };
 		02C0EB322C6328D4007031EF /* PrincipalMachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalMachView.swift; sourceTree = "<group>"; };
 		02C0EB342C633ADF007031EF /* HeaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderMainView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				0208B6382C654D5500BE13BA /* UINavigationController+Appearance.swift */,
 				02D0DFEC2C631631008BFDCB /* MainBankView.swift */,
 				0208B6432C6BEFC600BE13BA /* DraggingView.swift */,
+				0208B6452C6CF10F00BE13BA /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				0208B6352C65212700BE13BA /* ToolBarView.swift in Sources */,
 				02CABD312C58981E00D49D6E /* FintechTestApp.swift in Sources */,
 				02D0DFE32C61D0B5008BFDCB /* CarruselMainView.swift in Sources */,
+				0208B6462C6CF10F00BE13BA /* Extensions.swift in Sources */,
 				02D0DFE52C6314CC008BFDCB /* TransferView.swift in Sources */,
 				0208B6442C6BEFC600BE13BA /* DraggingView.swift in Sources */,
 				02D0DFE92C63152D008BFDCB /* CreditCardView.swift in Sources */,

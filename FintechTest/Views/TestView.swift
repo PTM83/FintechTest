@@ -17,11 +17,14 @@ struct TestView: View {
             Text("Test View")
                 .font(.system(size: 50, weight: .bold, design: .rounded))
                 .foregroundStyle(letterColor)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .frame(maxWidth: .infinity)
+                .frame(height: 600)
                 .background(mainColor)
         }
-//        .toolbarBackground(mainColor, for: .automatic)
-//        .toolbarBackground(.visible, for: .navigationBar)
+        .customizeNavigatorBar(primaryColor: UIColor(mainColor))
+        .navigationTitle("Centro de ayuda")
+        .toolbarBackground(letterColor, for: .automatic)
+        .toolbarBackground(.visible, for: .navigationBar)
         
     }
 }

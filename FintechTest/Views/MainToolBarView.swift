@@ -80,6 +80,7 @@ struct MainToolBarView<Content: View, Destination: View>: View {
                     }
                 }
             }
+            .customizeNavigatorBar(primaryColor: UIColor(mainColor))
             .navigationBarBackButtonHidden(true)
             .foregroundColor(secondaryColor)
             .font(.system(size: constantSize["iconSize"] ?? 20,
