@@ -45,6 +45,7 @@ struct PrincipalMachView: View {
                     Label("Inversiones", systemImage: "dollarsign")
                 }
         }
+        .navigationBarBackButtonHidden(true)
         .tint(mainColor)
         .preferredColorScheme(.light)
     }

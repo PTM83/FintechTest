@@ -79,12 +79,14 @@ struct MainToolBarView<Content: View, Destination: View>: View {
                         }
                     }
                 }
-            }.foregroundColor(secondaryColor)
-                .font(.system(size: constantSize["iconSize"] ?? 20,
-                              weight: .medium,
-                              design: .rounded))
-                .toolbarBackground(mainColor, for: .automatic)
-                .toolbarBackground(.visible, for: .navigationBar)
+            }
+            .navigationBarBackButtonHidden(true)
+            .foregroundColor(secondaryColor)
+            .font(.system(size: constantSize["iconSize"] ?? 20,
+                          weight: .medium,
+                          design: .rounded))
+            .toolbarBackground(mainColor, for: .automatic)
+            .toolbarBackground(.visible, for: .navigationBar)
 //                .onAppear {
 //                    let appearance = UITabBarAppearance()
 //                                    appearance.configureWithOpaqueBackground()

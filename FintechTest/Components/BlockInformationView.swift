@@ -13,7 +13,7 @@ struct BlockInformationView: View {
     var mainColor: Color = CustomColors.primaryColor.toSwiftColor()
     var letterColor:Color = CustomColors.digitColor.toSwiftColor()
     
-    @State var testHeight: CGFloat = 0.0
+    @Binding var testHeight: CGFloat
     @State var numberAccount: String = "7770 12 345 678"
     @State var balanceAccount: Int = 15_953
     
@@ -27,8 +27,8 @@ struct BlockInformationView: View {
             RoundedRectangle(cornerRadius: 10)
                 .fill(secondaryColor)
                 .frame(maxWidth: .infinity,
-                       maxHeight: 160 + testHeight,
                        alignment: .center)
+                .frame(height: testHeight > 0 ? 160 + testHeight : 125)
                 .padding()
                 .shadow(color: .gray, radius: 2, x: 0, y: 0)
             
@@ -37,18 +37,21 @@ struct BlockInformationView: View {
                 
                 BottomInformationView(balance: $balanceAccount, mainColor: mainColor)
                 
-                VStack {
-                    Divider()
-                        .padding(.horizontal)
-                    
-                    NavigationLink(destination: TestView(),
-                                   label: {
-                        Text("Ver mis movimientos")
-                            .frame(alignment: .center)
-                            .foregroundStyle(mainColor)
-                            .font(.system(size: 15, weight: .medium, design: .rounded))
-                    })
+                if testHeight > 0 {
+                    VStack {
+                        Divider()
+                            .padding(.horizontal)
+                        
+                        NavigationLink(destination: TestView(),
+                                       label: {
+                            Text("Ver mis movimientos")
+                                .frame(alignment: .center)
+                                .foregroundStyle(mainColor)
+                                .font(.system(size: 15, weight: .medium, design: .rounded))
+                        })
+                    }
                 }
+                
                 
                 
             }
@@ -58,9 +61,14 @@ struct BlockInformationView: View {
     }
 }
 
-#Preview {
-    BlockInformationView()
+struct BlockInformationView_Previews: PreviewProvider {
+    static var previews: some View {
+        @State var previewHeight: CGFloat = 10.0
+        
+        BlockInformationView(testHeight: $previewHeight)
+    }
 }
+
 
 struct TopInformationView: View {
 
