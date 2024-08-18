@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TransferView: View {
     
+//    @Binding var viewID: Int
+    @EnvironmentObject var viewRouter: ViewRouter
     var primaryColor: Color = CustomColors.primaryColor.toSwiftColor()
     var secondaryColor:Color = CustomColors.letterColor.toSwiftColor()
     
@@ -22,9 +24,9 @@ struct TransferView: View {
     
     var body: some View {
         
-        
-        
-        ToolBarView(nameView:"Transferencia", iconView: "questionmark.circle") {
+        ToolBarView(nameView:"Transferencia",
+                    iconView: "questionmark.circle")
+        {
             TestView()
         } content: {
 //            Contenido de la Vista

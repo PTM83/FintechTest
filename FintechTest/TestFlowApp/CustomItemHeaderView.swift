@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct IconHeaderView: View {
+struct CustomItemHeaderView: View {
     
+    @Binding var selectedTab: Int
     let colorTest: Color = CustomColors.letterColor.toSwiftColor()
     let mainColor: Color = CustomColors.primaryColor.toSwiftColor()
     
@@ -16,7 +17,9 @@ struct IconHeaderView: View {
     var body: some View {
         HStack(alignment: .center) {
             
-            Button(action: {},
+            Button(action: {
+                selectedTab = 5
+            },
                    label: {
                 Image(systemName: "text.alignleft")
                     .font(.system(size: 25))
@@ -38,6 +41,7 @@ struct IconHeaderView: View {
             ForEach(IconApp.iconHeader, id: \.self) { icon in
                 Button(action: {
                     // Agregar las vistas o función que permita ir a otra vista, para cada icono
+                    selectedTab = 5
                 }, label: {
                     Image(systemName: icon)
                     
@@ -52,7 +56,7 @@ struct IconHeaderView: View {
 }
 
 #Preview {
-    IconHeaderView()
+    CustomItemHeaderView(selectedTab: .constant(0))
         .background(.blue)
 }
 

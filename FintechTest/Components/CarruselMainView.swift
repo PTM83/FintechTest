@@ -42,24 +42,24 @@ struct CarruselMainView: View {
         var mainColor: Color
         
         var body: some View {
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing:5) {
                 Image(systemName: icon)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 40, height: 40)
+                    .frame(width: 40, height: 40,alignment: .center)
                     .foregroundStyle(mainColor)
-                    .padding([.leading, .top], 5)
                 Text(text)
                     .font(.system(size: 16, weight: .medium, design: .rounded))
                     .kerning(1.2)
                     .foregroundStyle(.black)
-                    .padding([.leading, .trailing, .bottom],8)
                     .multilineTextAlignment(.leading)
+//                    .padding([.leading, .trailing, .bottom],8)
+                    .frame(width: 130, height: 50, alignment: .topLeading)
             }
-            .frame(width: 160, height: 100)
-            .background(Color.white)
+            .frame(width: 130, height: 80)
+            .padding(12)
+            .background(Color.blue.opacity(0.3))
             .cornerRadius(10)
-            .shadow(color: Color.gray.opacity(0.2), radius: 3, x: 0, y: 2)
         }
     }
     

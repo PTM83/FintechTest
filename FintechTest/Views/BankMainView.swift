@@ -17,9 +17,11 @@ struct BankMainView: View {
     @State private var initialPosition: CGFloat = 0.0
     @State private var currentPosition: CGFloat = 0.0
     @State var testHeight: CGFloat = 24.0
+    @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
         MainToolBarView(
+//            viewID: $viewID,
             personName: "Pablo",
             destinationOne: { TestView() },
             destinationTwo: { TestView() },
@@ -78,63 +80,21 @@ struct BankMainView: View {
                                 }
                             }
                         }
-//                        .background(
-////                            GeometryReader { geo -> Color in
-////                                // Detectar cuando el ScrollView ha llegado al final
-////                                let maxY = geo.frame(in: .global).maxY
-////                                DispatchQueue.main.async {
-////                                    if maxY < UIScreen.main.bounds.height + 20 {
-////                                        if !reachedBottom {
-////                                            reachedBottom = true
-////                                            isLoading = false
-////                                        }
-////                                    } else {
-////                                        reachedBottom = false
-////                                    }
-////                                }
-////                                return Color.clear
-////                            }
-//                            
-//                            GeometryReader { geo -> Color in
-//                                let minY = geo.frame(in: .global).minY
-//                                let maxY = geo.frame(in: .global).maxY
-//                                
-//                                DispatchQueue.main.async {
-//                                    if maxY < UIScreen.main.bounds.height && !reachedBottom {
-//                                        // El usuario ha llegado al final del ScrollView
-//                                        reachedBottom = true
-//                                        print("maxY: \(maxY), minY: \(minY)")
-//                                        
-//                                        print("UIScreen - maxY: \(UIScreen.main.bounds.height)")
-//                                    }
-//                                    
-//                                    if minY > UIScreen.main.bounds.height * 0.9 && reachedBottom {
-//                                        // El usuario está desplazando hacia arriba desde el final
-//                                        isLoading = false
-//                                        reachedBottom = false
-//                                        print("minY: \(minY)")
-//                                        print("UIScreen - minY: \(UIScreen.main.bounds.height * 0.9)")
-//                                    }
-//                                }
-//                                return Color.clear
-//                            }
-//                            
-//                        )
+
                     }
                     .padding(.horizontal)
                     .refreshable {
                         isLoading = true
-//                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-//                            isLoading = false
-//                        }
                     }
                 }
                 .background(secondaryColor)
             }
         )
+        .customizeNavigatorBar(primaryColor: UIColor(mainColor))
     }
 }
 
 #Preview {
+//    BankMainView(viewID: .constant(0))
     BankMainView()
 }

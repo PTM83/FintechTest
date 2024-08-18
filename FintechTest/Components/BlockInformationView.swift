@@ -14,6 +14,8 @@ struct BlockInformationView: View {
     var letterColor:Color = CustomColors.digitColor.toSwiftColor()
     
     @Binding var testHeight: CGFloat
+//    @Binding var viewID: Int
+    @EnvironmentObject var viewRouter: ViewRouter
     @State var numberAccount: String = "7770 12 345 678"
     @State var balanceAccount: Int = 15_953
     
@@ -71,7 +73,8 @@ struct BlockInformationView_Previews: PreviewProvider {
 
 
 struct TopInformationView: View {
-
+//    @Binding var viewID: Int
+    @EnvironmentObject var viewRouter: ViewRouter
     @Binding var account: String
     var letterColor: Color
     
@@ -90,7 +93,7 @@ struct TopInformationView: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: TestView(),
+            NavigationLink(destination: TestView(),
                                label: {
                     Image(systemName: IconApp.sharedInformation)
                         .resizable()

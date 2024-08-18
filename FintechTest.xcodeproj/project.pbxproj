@@ -17,6 +17,13 @@
 		0208B6422C6B9A8300BE13BA /* BlockInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B6412C6B9A8300BE13BA /* BlockInformationView.swift */; };
 		0208B6442C6BEFC600BE13BA /* DraggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B6432C6BEFC600BE13BA /* DraggingView.swift */; };
 		0208B6462C6CF10F00BE13BA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B6452C6CF10F00BE13BA /* Extensions.swift */; };
+		0208B6482C6DB2F900BE13BA /* ViewRouterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B6472C6DB2F900BE13BA /* ViewRouterModel.swift */; };
+		026CD55C2C6F87AC0023ED1B /* [Op1]CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CD55B2C6F87AC0023ED1B /* [Op1]CustomTabView.swift */; };
+		026CD55E2C7042170023ED1B /* CustomPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CD55D2C7042170023ED1B /* CustomPrincipalView.swift */; };
+		026CD5602C7043C50023ED1B /* CustomTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CD55F2C7043C50023ED1B /* CustomTestView.swift */; };
+		026CD5662C704A870023ED1B /* CustomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CD5652C704A870023ED1B /* CustomBarView.swift */; };
+		026CD5692C7058D20023ED1B /* CustomItemHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CD5682C7058D20023ED1B /* CustomItemHeaderView.swift */; };
+		026CD56B2C705D910023ED1B /* CustomMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CD56A2C705D910023ED1B /* CustomMainView.swift */; };
 		02955BB22C5D7746008309BC /* DigitEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02955BB12C5D7746008309BC /* DigitEntryView.swift */; };
 		02C0EB332C6328D4007031EF /* PrincipalMachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0EB322C6328D4007031EF /* PrincipalMachView.swift */; };
 		02C0EB352C633ADF007031EF /* HeaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0EB342C633ADF007031EF /* HeaderMainView.swift */; };
@@ -74,6 +81,13 @@
 		0208B6412C6B9A8300BE13BA /* BlockInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockInformationView.swift; sourceTree = "<group>"; };
 		0208B6432C6BEFC600BE13BA /* DraggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggingView.swift; sourceTree = "<group>"; };
 		0208B6452C6CF10F00BE13BA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0208B6472C6DB2F900BE13BA /* ViewRouterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouterModel.swift; sourceTree = "<group>"; };
+		026CD55B2C6F87AC0023ED1B /* [Op1]CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "[Op1]CustomTabView.swift"; sourceTree = "<group>"; };
+		026CD55D2C7042170023ED1B /* CustomPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPrincipalView.swift; sourceTree = "<group>"; };
+		026CD55F2C7043C50023ED1B /* CustomTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTestView.swift; sourceTree = "<group>"; };
+		026CD5652C704A870023ED1B /* CustomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBarView.swift; sourceTree = "<group>"; };
+		026CD5682C7058D20023ED1B /* CustomItemHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItemHeaderView.swift; sourceTree = "<group>"; };
+		026CD56A2C705D910023ED1B /* CustomMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainView.swift; sourceTree = "<group>"; };
 		02955BB12C5D7746008309BC /* DigitEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitEntryView.swift; sourceTree = "<group>"; };
 		02C0EB322C6328D4007031EF /* PrincipalMachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalMachView.swift; sourceTree = "<group>"; };
 		02C0EB342C633ADF007031EF /* HeaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderMainView.swift; sourceTree = "<group>"; };
@@ -141,6 +155,7 @@
 				02D0DFEC2C631631008BFDCB /* MainBankView.swift */,
 				0208B6432C6BEFC600BE13BA /* DraggingView.swift */,
 				0208B6452C6CF10F00BE13BA /* Extensions.swift */,
+				026CD55F2C7043C50023ED1B /* CustomTestView.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -158,6 +173,34 @@
 				0208B63B2C65BC9E00BE13BA /* WayofTransferView.swift */,
 			);
 			path = TransferComponent;
+			sourceTree = "<group>";
+		};
+		026CD55A2C6F878B0023ED1B /* CustomTabView */ = {
+			isa = PBXGroup;
+			children = (
+				026CD55B2C6F87AC0023ED1B /* [Op1]CustomTabView.swift */,
+			);
+			path = CustomTabView;
+			sourceTree = "<group>";
+		};
+		026CD5612C7049C10023ED1B /* CustomBarView */ = {
+			isa = PBXGroup;
+			children = (
+				026CD5652C704A870023ED1B /* CustomBarView.swift */,
+			);
+			path = CustomBarView;
+			sourceTree = "<group>";
+		};
+		026CD5672C7058780023ED1B /* TestFlowApp */ = {
+			isa = PBXGroup;
+			children = (
+				026CD55A2C6F878B0023ED1B /* CustomTabView */,
+				026CD5612C7049C10023ED1B /* CustomBarView */,
+				026CD5682C7058D20023ED1B /* CustomItemHeaderView.swift */,
+				026CD55D2C7042170023ED1B /* CustomPrincipalView.swift */,
+				026CD56A2C705D910023ED1B /* CustomMainView.swift */,
+			);
+			path = TestFlowApp;
 			sourceTree = "<group>";
 		};
 		02CABD242C58981E00D49D6E = {
@@ -183,6 +226,7 @@
 		02CABD2F2C58981E00D49D6E /* FintechTest */ = {
 			isa = PBXGroup;
 			children = (
+				026CD5672C7058780023ED1B /* TestFlowApp */,
 				0208B6332C647AE800BE13BA /* ViewModel */,
 				0208B6302C64793000BE13BA /* Other */,
 				02FAD9C32C5C3194007EE8EF /* App */,
@@ -225,6 +269,7 @@
 			children = (
 				02CABD5B2C58A22A00D49D6E /* model_Introduction.swift */,
 				02F655332C5C89A200BEA3A2 /* UserDataBase.swift */,
+				0208B6472C6DB2F900BE13BA /* ViewRouterModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -437,12 +482,16 @@
 			files = (
 				02CABD602C59EDC000D49D6E /* DataConstantApp.swift in Sources */,
 				0208B6372C6548E900BE13BA /* TestView.swift in Sources */,
+				026CD55C2C6F87AC0023ED1B /* [Op1]CustomTabView.swift in Sources */,
+				026CD5692C7058D20023ED1B /* CustomItemHeaderView.swift in Sources */,
 				02CABD332C58981E00D49D6E /* ViewIntroduction.swift in Sources */,
 				02D0DFE12C614062008BFDCB /* BlockInformation.swift in Sources */,
+				026CD56B2C705D910023ED1B /* CustomMainView.swift in Sources */,
 				02D0DFDA2C5F3EB7008BFDCB /* MachMainView.swift in Sources */,
 				0208B6422C6B9A8300BE13BA /* BlockInformationView.swift in Sources */,
 				02C0EB332C6328D4007031EF /* PrincipalMachView.swift in Sources */,
 				02CABD5E2C59EC7700D49D6E /* DigitPasswordView.swift in Sources */,
+				026CD55E2C7042170023ED1B /* CustomPrincipalView.swift in Sources */,
 				0208B6322C6479E700BE13BA /* InfoPrincipalBlockMainView.swift in Sources */,
 				02D0DFDD2C5F4952008BFDCB /* IconHeaderView.swift in Sources */,
 				02CABD5C2C58A22A00D49D6E /* model_Introduction.swift in Sources */,
@@ -451,8 +500,11 @@
 				02C0EB382C6345FD007031EF /* BlockPutInformationView.swift in Sources */,
 				02CABD642C5B3EC300D49D6E /* checkPasswordView.swift in Sources */,
 				02D0DFEF2C6316DF008BFDCB /* SimpleButtonView.swift in Sources */,
+				0208B6482C6DB2F900BE13BA /* ViewRouterModel.swift in Sources */,
+				026CD5662C704A870023ED1B /* CustomBarView.swift in Sources */,
 				0208B63E2C665EDC00BE13BA /* MainToolBarView.swift in Sources */,
 				02D0DFEB2C6315BC008BFDCB /* InvestAccountView.swift in Sources */,
+				026CD5602C7043C50023ED1B /* CustomTestView.swift in Sources */,
 				0208B63C2C65BC9E00BE13BA /* WayofTransferView.swift in Sources */,
 				02D0DFF12C63213B008BFDCB /* QRPaymentView.swift in Sources */,
 				02955BB22C5D7746008309BC /* DigitEntryView.swift in Sources */,

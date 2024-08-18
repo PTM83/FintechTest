@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct CreditCardView: View {
+    
+//    @Binding var viewID: Int
+    @EnvironmentObject var viewRouter: ViewRouter
+    
     var body: some View {
         ToolBarView(nameView:"Mis tarjetas", iconView: "questionmark.circle") {
             TestView()

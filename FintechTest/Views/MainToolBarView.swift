@@ -20,6 +20,9 @@ struct MainToolBarView<Content: View, Destination: View>: View {
     ///destinationTwo: Corresponde al icono de pregunta
     
     // Colores a Utilizar
+//    @Binding var viewID: Int
+    @EnvironmentObject var viewRouter: ViewRouter
+    
     let mainColor: Color = CustomColors.primaryColor.toSwiftColor()
     let secondaryColor: Color = CustomColors.letterColor.toSwiftColor()
     
@@ -103,6 +106,7 @@ struct MainToolBarView<Content: View, Destination: View>: View {
 
 #Preview {
     MainToolBarView(
+//        viewID: .constant(0),
         personName: "Person",
         destinationOne: {
             TestView() // Primera vista de destino
